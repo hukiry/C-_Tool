@@ -1,0 +1,27 @@
+
+//请求图鉴数据
+message tos_1401
+{
+
+}
+
+//所有图鉴数据
+message toc_1401
+{
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated int32 itemIds = 1;//物品id集合-状态*10_0000
+}
+
+
+//解锁和领取物品
+message tos_1402
+{
+  required int32 itemId = 1;//物品id
+  required byte state = 2;//物品状态
+}
+
+//购买完成
+message toc_1402
+{
+
+}

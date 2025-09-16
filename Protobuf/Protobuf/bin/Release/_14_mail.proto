@@ -1,0 +1,109 @@
+package com.nutspower.pb.logic;
+option java_outer_classname = "GMail";
+
+/**
+  邮件信息
+ */
+message MailInfo
+{
+  // id
+  optional int64 mailId = 1;
+  // 标题
+  optional string title = 2;
+  // 发送内容
+  optional string content = 3;
+  // 邮件类型
+  optional int32 type = 4;
+  // 内容参数
+  optional string args = 5;
+  // 奖励内容
+  optional string reward = 6;
+  // 发送时间
+  optional int64 sendTime = 7;
+  // 过期时间 -1 不过期 单位s
+  optional int32 expireTime = 8;
+  //0:未读 1:已读 2:已领取
+  optional int32 status = 9;
+}
+
+///////////////////////////
+
+/************返回角色邮件信息***********/
+//GMsg_11008001
+message m_1401_tos
+{
+  required int64 lastMailTimestamp = 1;//收到最后一封邮件的时间戳
+  required string lang = 2;//语言
+}
+
+message m_1401_toc
+{
+  // 邮件信息
+  repeated MailInfo mailInfo_list = 1;
+}
+
+
+/************创建角色***********/
+//GMsg_11008002
+message m_1402_tos
+{
+  // 邮件信息
+  repeated int64 delMailIds = 1;
+}
+
+message m_1402_toc
+{
+  repeated int64 delMailIds = 1;
+}
+
+
+/************读邮件***********/
+//GMsg_11008003
+message m_1403_tos
+{
+  required int64 mailId = 1;
+}
+
+message m_1403_toc
+{
+}
+
+
+/************领取附件***********/
+//GMsg_11008004
+message m_1404_tos
+{
+  required int64 mailId = 1;//邮件id
+}
+
+message m_1404_toc
+{
+}
+
+
+/************领取所有奖励***********/
+//GMsg_11008005
+message m_1405_tos
+{
+  required string name = 1;//角色名
+}
+
+message m_1405_toc
+{
+  // 领取奖励的邮件ids
+  repeated int64 getMailIds = 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

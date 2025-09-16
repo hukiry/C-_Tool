@@ -1,0 +1,12 @@
+
+//引导、签到、通行证数据
+message msg_1301
+{
+    //0=接收成功，1=请求数据，2=读取，3=删除，4=领取
+    optional byte state = 1;
+    //功能类型
+    optional byte type = 2;
+    //角色id
+    optional int32 roleId = 3;
+
+}

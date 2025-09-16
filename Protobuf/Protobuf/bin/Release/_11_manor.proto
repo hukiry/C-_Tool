@@ -1,0 +1,79 @@
+
+ //庄园建筑摆放数据
+message ManorInfo
+{
+  optional int64 id = 1;
+  optional int32 buildingId = 2;
+  optional int32 x = 3;
+  optional int32 y = 4;
+  optional int32 level = 5;// 摆放位置
+  optional int32 location = 6;
+  optional int32 status = 7;// 建筑状态 0 正常 1 失效 2 升级中 3建造中
+  optional int64 goldProduceTime = 8;  // 金币开始生产时间
+  optional int64 goldCoinCycleTime = 9;  // 金币产出总时间
+  optional int64 endTime = 10;  // 升级结束时间
+}
+
+//读取庄园数据
+message m_1101_tos
+{
+}
+
+message toc_1101
+{
+  repeated ManorInfo manorInfo_list = 1; // 庄园信息
+  repeated int32 grids = 2;//已解锁的格子
+}
+
+//创建建筑
+message tos_1102
+{
+  required  int32 bId = 1;
+  required  int32 from = 2;  //1商店 2.仓库
+  required  int32 x = 3;
+  required  int32 y = 4;
+}
+
+message toc_1102
+{
+  required ManorInfo manorInfo = 1;
+}
+
+//解锁格子
+message tos_1103
+{
+  required  int32 bType = 1;
+  required  int32 grid = 2;
+}
+
+message toc_1103
+{
+}
+
+//回收建筑
+message tos_1104
+{
+  required  int64 bId = 1;//建筑ID
+}
+
+message toc_1104
+{
+}
+
+
+//放置建筑*
+message tos_1108
+{
+  required int32 buildingId = 1;
+  required int32 x = 2;
+  required int32 y = 3;
+  required int32 themeId = 4;
+}
+
+message toc_1108
+{
+  required ManorInfo manorInfo = 1;
+}
+
+
+

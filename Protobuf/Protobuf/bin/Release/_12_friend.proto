@@ -1,0 +1,127 @@
+package com.nutspower.pb.logic;
+option java_outer_classname = "GFriend";
+import "_11_manor.proto";
+
+message PlayerInfo{
+
+  optional string name=1;
+  optional int32 img=2;  //头像
+  optional int32 lv=3;  //等级
+  optional int64 roleId=4;  //玩家id
+  //状态 1:我的邀请 2:受邀 |  1:有人邀请我 2:我的邀请被同意了 3:我的邀请被拒绝了 4:取消了邀请 5:删除了好友
+  optional int32 status=5;
+
+}
+
+message PlayerInfoList
+{
+  repeated  PlayerInfo list = 1;
+  optional int32 freshTime=2;  //刷新结束时间
+}
+
+//////////////////////////////////////////////////////
+
+/************刷新玩家列表***********/
+//GMsg_11006001
+message m_1201_tos
+{
+}
+
+message m_1201_toc
+{
+  required PlayerInfoList playerInfoList = 1;//好友列表
+}
+
+/************请求自己的好友列表***********/
+//GMsg_11006002
+message m_1202_tos
+{
+}
+
+message m_1202_toc
+{
+  required PlayerInfoList playerInfoList = 1;//好友列表
+}
+
+/************获取News**********/
+//GMsg_11006003
+message m_1203_tos
+{
+}
+
+message m_1203_toc
+{
+  required PlayerInfoList playerInfoList = 1;//好友列表
+}
+
+/************邀请好友***********/
+//GMsg_11006004
+message m_1204_tos
+{
+  required int64 friendId=1;//目标玩家Id
+}
+
+message m_1204_toc
+{
+}
+
+/************处理好友申请***********/
+//GMsg_11006005
+message m_1205_tos
+{
+  optional int64 roleId=1;
+  optional int32 opt=2;  //1.同意申请 2.拒绝申请 3.取消申请
+}
+
+message m_1205_toc
+{
+}
+
+/************读取玩家列表***********/
+//GMsg_11006006
+message m_1206_tos
+{
+}
+
+message m_1206_toc
+{
+  required PlayerInfoList playerInfoList = 1;//好友列表
+}
+
+/************刷新玩家列表***********/
+//GMsg_11006007
+message m_1207_tos
+{
+  optional int64 roleId=1;
+}
+
+message m_1207_toc
+{
+}
+
+/************参观好友庄园***********/
+//GMsg_11006008
+message m_1208_tos
+{
+  optional int64 roleId=1;
+}
+
+message m_1208_toc
+{
+  repeated ManorInfo list=1;
+  optional string grids = 2;
+}
+
+/************读取好友变化信息***********/
+//GMsg_11006009
+message m_1209_tos
+{
+}
+
+message m_1209_toc
+{
+    required PlayerInfoList playerInfoList = 1;
+}
+
+
+

@@ -1,0 +1,54 @@
+package com.nutspower.pb.logic;
+option java_outer_classname = "GExchange";
+
+
+/************请求订单信息***********/
+//GMsg_11012001
+message m_1601_tos
+{
+}
+
+message m_1601_toc
+{
+  repeated int32 orderIds = 1;  //订单Id列表
+  optional int32 doOrderId = 2;  //正在执行的订单id
+  optional int32 doTime = 3;  //剩余完成时间
+}
+
+/************领取订单奖励***********/
+//GMsg_11012002
+message m_1602_tos
+{
+  required int32 orderId = 1;  //订单Id
+}
+
+message m_1602_toc
+{
+}
+
+/************执行订单***********/
+//GMsg_11012003
+message m_1603_tos
+{
+  required int32 orderId = 1;  //订单Id
+}
+
+message m_1603_toc
+{
+  required int64 serverTime = 1;
+  required int32 doTime = 3;  //剩余完成时间
+}
+
+
+/************加速订单***********/
+//GMsg_11012004
+message m_1604_tos
+{
+  required int32 orderId = 1;  //订单Id
+}
+
+message m_1604_toc
+{
+}
+
+

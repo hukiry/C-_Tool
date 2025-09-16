@@ -1,0 +1,54 @@
+
+//请求引导和签到数据：登录界面请求
+message tos_1601
+{
+
+}
+
+//引导和签到数据
+message toc_1601
+{
+    #[TextLength(ProtoType.None|ProtoType.Update)]
+  required int16 guideIndex = 1;//最新引导的索引
+    #[TextLength(ProtoType.None|ProtoType.Update)]
+  required int16 day = 2;//最新签到天数：已经签到的
+    #[TextLength(ProtoType.None|ProtoType.Update)]
+  required int16 continueDay = 3;//连续奖励
+}
+
+
+//请求签到
+message tos_1602
+{
+  required int16 day = 1;//签到的天数
+}
+
+//签到
+message toc_1602
+{
+
+}
+
+//请求引导
+message tos_1603
+{
+  required int16 guideIndex = 1;//剧情引导索引
+}
+
+//引导
+message toc_1603
+{
+
+}
+
+//请求连续奖励领取
+message tos_1604
+{
+  required int16 continueDay = 1;//连续奖励领取
+}
+
+//签到
+message toc_1604
+{
+
+}

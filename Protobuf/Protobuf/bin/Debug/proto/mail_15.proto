@@ -1,0 +1,80 @@
+﻿//货币信息
+message GMailInfo
+{
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  required int32 mailId = 1;//邮件id
+  required string rewards = 2;//奖励id
+  required string title = 3;//邮件id
+  required string content = 4;//邮件内容
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  required byte state = 5;//邮件状态
+}
+
+//请求邮件数据:最近20条
+message tos_1501
+{
+
+}
+
+//所有邮件数据
+message toc_1501
+{
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated GMailInfo mails = 1;//邮件id集合
+}
+
+
+message tos_1502
+{
+
+}
+//服务端同步一条邮件
+message toc_1502
+{
+   required GMailInfo mail = 1;//邮件
+}
+
+
+//读取邮件
+message tos_1503
+{
+  required int32 mailId = 1;//邮件id
+}
+
+message toc_1503
+{
+
+}
+
+//领取邮件
+message tos_1504
+{
+  required int32 mailId = 1;//邮件id
+}
+
+message toc_1504
+{
+
+}
+
+//删除单个邮件
+message tos_1505
+{
+  required int32 mailId = 1;//邮件id
+}
+
+message toc_1505
+{
+
+}
+
+//删除或读取所有邮件
+message tos_1506
+{
+  required bool isDel = 1;//true-删除所有，false-阅读所有
+}
+
+message toc_1506
+{
+
+}

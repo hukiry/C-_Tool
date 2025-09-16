@@ -1,0 +1,75 @@
+package com.nutspower.pb.logic;
+option java_outer_classname = "GTask";
+//option optimize_for = LITE_RUNTIME;
+
+
+/**
+  角色任务数据
+ */
+message GRoleTaskInfo
+{
+  // 任务id
+  optional int32 taskId = 1;
+  optional int32 num = 2;  //进度(-1)  已完成
+  optional int32 taskGetEndTime = 3;  //任务可领取结束时间
+}
+
+message GRoleTaskInfoList
+{
+  repeated GRoleTaskInfo list = 1;
+  optional int32 score = 2;  //积分
+  optional int32 limitAwardId = 3;  //限时奖励id
+  optional int32 limitAwardEndTime = 4;  //限时奖励截止时间
+  optional int32 flushTime = 5;  //已刷新次数
+}
+
+
+/************请求角色任务数据***********/
+//GMsg_11011001
+message m_1501_tos
+{
+}
+
+message m_1501_toc
+{
+  required GRoleTaskInfoList roleTaskInfo_list = 1;
+}
+
+
+/************领取任务奖励***********/
+//GMsg_11011002
+message m_1502_tos
+{
+  required int32 task_get_Id = 1;//收到最后一封邮件的时间戳
+}
+
+message m_1502_toc
+{
+  required GRoleTaskInfoList roleTaskInfo_list = 1;
+}
+
+/************刷新任务(每天1次免费)***********/
+//GMsg_11011003
+message m_1503_tos
+{
+  required int32 task_slot = 1;//任务槽
+}
+
+message m_1503_toc
+{
+  // 邮件信息
+  required GRoleTaskInfo roleTaskInfo = 1;
+}
+
+
+/************领取任务(时间到或者看广告)***********/
+//GMsg_11011004
+message m_1504_tos
+{
+  required int32 task_get_slot=1;//任务槽
+}
+
+message m_1504_toc
+{
+}
+

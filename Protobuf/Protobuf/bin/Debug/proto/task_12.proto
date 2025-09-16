@@ -1,0 +1,28 @@
+
+//请求任务数据
+message tos_1201
+{
+
+}
+
+//所有的任务数据
+message toc_1201
+{
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated int16 taskIds = 1;//完成的任务ID集合-用于家园
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated byte counts = 2;//完成的任务的数量。
+}
+
+
+//完成一个目标
+message tos_1202
+{
+  required int16 taskId = 1;//任务ID
+}
+
+//完成一个目标
+message toc_1202
+{
+
+}

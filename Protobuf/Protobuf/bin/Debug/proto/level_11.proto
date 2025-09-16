@@ -1,0 +1,70 @@
+﻿
+//打开关卡界面：关卡解锁数据
+message tos_1101
+{
+
+}
+
+//请求所有的关卡数据
+message toc_1101
+{
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated byte stars = 1;//解锁的关卡集合，星星的集合对应索引的关卡
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated byte counts = 2;//挑战关卡的次数
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated byte rewards = 3;//关卡累计连续奖励
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated byte boxRewards = 4;//关卡累计星星奖励：索引对应章节id
+}
+
+
+//进入关卡：挑战关卡
+message tos_1102
+{
+  required int16 level = 1;//挑战关卡的索引
+  required byte enegry = 2;//挑战关卡需要的体力
+}
+
+//进入关卡
+message toc_1102
+{
+  required byte code = 1;//0-可以挑战，1-体力不足
+}
+
+//重置和完成关卡
+message tos_1103
+{
+  required int16 levelIndex = 1;//完成的星星数*1000+关卡索引
+  required byte state = 2;//0-重置时间，1-重复关卡，2-通关成功
+}
+
+//缓存通关成功的数据
+message toc_1103
+{
+
+}
+
+//领取奖励
+message tos_1104
+{
+  required int16 level = 1;//挑战关卡的索引
+  required byte index = 2;//领取当前关卡奖励的索引
+}
+
+message toc_1104
+{
+
+}
+
+//宝箱累计奖励
+message tos_1105
+{
+  required byte chaperIndex = 1;//关卡章节的索引
+  required byte index = 2;//星星奖励的索引
+}
+
+message toc_1105
+{
+
+}

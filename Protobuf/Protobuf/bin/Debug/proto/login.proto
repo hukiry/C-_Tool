@@ -1,0 +1,37 @@
+
+//请求登录
+message msg_1001
+{
+    //首次登录的设备id
+    optional string deviceId = 1;
+    //首次登录的语言
+    optional string lang = 2;
+    //登录方式
+    optional byte login_type = 3;
+    //登录平台
+    optional byte platform = 4;
+
+}
+
+//游戏数据
+message msg_1002
+{  
+    optional int32 roleId = 1;
+    optional string roleNick = 2;
+    optional int32 level = 3;
+    optional int32 goldNum = 4;
+    optional int64 curEnergyTime = 5;
+    optional int64 createAccountTime = 6;
+    optional string token = 7;
+}
+
+//注销或绑定
+message msg_1003
+{
+    //0=接收成功，1=注销，2=绑定
+    optional byte state = 1;
+    //角色登录
+    optional int32 roleId = 2;
+    //绑定登录
+    optional string token = 3;
+}

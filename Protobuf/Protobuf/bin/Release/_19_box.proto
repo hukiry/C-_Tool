@@ -1,0 +1,22 @@
+package com.nutspower.pb.logic;
+option java_outer_classname = "GBox";
+
+message Award
+{
+  optional int32 code = 1;
+  optional int32 amount = 2;
+  optional int32 quality = 3; //品质
+}
+
+
+/************商店购买***********/
+//11015001
+message tos_1901
+{
+  required int32 openType= 1;//开启类型:  0.一星宝箱 1.五星宝箱
+}
+
+message toc_1901
+{
+  repeated Award awards=1;
+}

@@ -1,0 +1,43 @@
+
+//请求通行证数据
+message tos_1701
+{
+
+}
+
+//所有通行证数据
+message toc_1701
+{
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated int16 passIds = 1;//免费奖励-通行证id集合1-30的索引-id+100 百位是状态，后两位是累计的天数
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated int16 passPayIds = 2;//支付奖励-通行证id集合1-30的索引-id+100 百位是状态，后两位是支付的天数
+    #[TextLength(ProtoType.None|ProtoType.Update)]
+  required byte monthNum = 3;//月份
+}
+
+
+//通行证：领取奖励
+message tos_1702
+{
+  required int16 passIndex = 1;//通行证id-1-30的索引
+  required byte state = 2;//通行证免费奖励状态
+}
+
+//通行证
+message toc_1702
+{
+
+}
+
+//通行证：支付
+message tos_1703
+{
+  required int32 passIndex = 1;//通行证支付id
+}
+
+//通行证
+message toc_1703
+{
+
+}

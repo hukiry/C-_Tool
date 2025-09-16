@@ -1,0 +1,9 @@
+
+//好友和操作
+message msg_1501
+{
+    //0=接收成功，1=请求好友数据，2=查找，3=添加，4=删除，5=发送聊天
+    optional byte state = 1;
+    //角色id
+    optional int32 roleId = 2;
+}

@@ -1,0 +1,11 @@
+
+//所有活动：定时请求，领取操作
+message msg_1201
+{
+    //0=接收成功，1=请求数据，2=读取，3=删除，4=领取
+    optional byte state = 1;
+    //功能类型
+    optional byte type = 2;
+    //角色id
+    optional int32 roleId = 3;
+}

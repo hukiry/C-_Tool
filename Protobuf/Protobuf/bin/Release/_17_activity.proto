@@ -1,0 +1,87 @@
+package com.nutspower.pb.logic;
+option java_outer_classname = "GActivity";
+
+
+message BuildingStatus
+{
+  optional int32 bId = 1;
+  optional int32 status = 2;
+}
+
+message UnBuilding{
+  required int32 code =1;
+  required int32 amount =2;
+}
+
+
+message UnBuildingList{
+  // 未建造的主题活动id
+  repeated UnBuilding list =1;
+}
+
+
+/////////////////////////////
+
+/************请求主题活动***********/
+//GMsg_11013001
+message m_1701_tos
+{
+}
+
+message m_1701_toc
+{
+  // 积分
+  optional int32 points = 1;
+  repeated BuildingStatus buildings = 2;
+  optional int32 ativityId = 3;  //活动id
+}
+
+/************参加主题活动***********/
+//GMsg_11013002
+message m_1702_tos
+{
+  required int32 activityId = 1;//活动id
+}
+
+message m_1702_toc
+{
+}
+
+/************请求限时活动信息***********/
+//GMsg_11013010
+message m_1703_tos
+{
+}
+
+message m_1703_toc
+{
+  optional int32 limitActivityId = 1;  //限时活动id
+  optional int32 points = 2;
+  optional int32 awardProcess = 3;  //领取奖励的进度
+}
+
+/************领取限时活动的奖励***********/
+//GMsg_11013011
+message m_1704_tos
+{
+}
+
+//31001:角色名重复 31002:角色名字最大长度15
+//GMsg_12001000
+message m_1704_toc
+{
+  required int32 limitActivityAward = 1;//已领取奖励进度
+}
+
+//-------------------------推送--------------------------------
+
+//未建造的主题活动建筑
+//GMsg_13013001
+message m_1799_toc
+{
+  required UnBuildingList unBuildingList = 1;
+}
+
+
+
+

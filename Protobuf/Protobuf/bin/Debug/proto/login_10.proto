@@ -1,0 +1,132 @@
+﻿
+//货币信息
+message GMoneyInfo
+{
+  optional byte type = 1;//货币类型
+  optional int32 num = 2;//货币数量
+}
+
+//请求登录
+message tos_1001
+{
+  optional string time = 1;//每天的登录时间
+    #[TextLength(ProtoType.Text,100)]
+  optional string deviceId = 2;//设备识别码
+  optional string sign = 3;//MD5验证码（time,deviceId）
+    #[TextLength(ProtoType.FullText)]
+  optional string token = 5;//sdk登录唯一token或编辑模式空
+    #[TextLength(ProtoType.Client)]
+  optional int32 platform = 4;//客户端平台：1-开发模式，0-安卓，1-ios
+    #[TextLength(ProtoType.Client)]
+  optional byte login_type = 7;//登录方式1-游客注册，2-账号
+    #[TextLength(ProtoType.Text, 10)]
+  optional string lang = 8;//首次启动游戏的语言或者切换语言
+  optional byte state = 9;//0-正常登录，1-断线重连
+}
+
+//登录回复
+message toc_1001
+{
+  #[TextLength(ProtoType.PrimaryKey)]
+  optional int32 roleID = 1;//角色id
+    #[TextLength(ProtoType.None)]
+  optional int32 create_time = 2;//注册时间戳
+  optional int32 server_time = 3;//服务器时间(单位秒)
+  optional int32 forbidden_time = 4;//封号结束时间
+  optional bool white = 5;//1白名单，0不是白名单
+    #[TextLength(ProtoType.None)]
+  optional int16 portraitID = 6;//头像id
+    #[TextLength(ProtoType.Text,20)]
+  optional string roleNick = 7;//角色昵称
+    #[TextLength(ProtoType.Json)]
+  repeated GMoneyInfo items = 8;//货币资源
+    optional byte state = 9;//登录状态1-客户端需要切换到登录场景，0 不需要登录
+  optional bool isBind = 10;
+  //活动等......
+}
+
+//货币
+message tos_1002
+{
+  optional byte type = 1;//货币类型
+  optional int32 num = 2;//货币数量
+  optional byte state = 3;//0不变，1加，2减
+}
+message toc_1002
+{
+  optional byte type = 1;//货币类型
+  optional int32 num = 2;//货币数量
+}
+
+//登出
+message tos_1003
+{
+
+}
+message toc_1003
+{
+
+}
+
+//修改昵称和头像
+message tos_1004
+{
+  optional string roleNick = 1;//角色昵称-16个字符
+  optional int16 portraitID = 2;//头像ID
+}
+message toc_1004
+{
+
+}
+
+//活动礼包请求
+message tos_1005
+{
+
+}
+
+message toc_1005
+{
+
+}
+
+//绑定fb
+message tos_1006
+{
+  optional string token = 1;//绑定fb
+}
+
+message toc_1006
+{
+  optional byte state = 1;//1=远程设备登录中，此设备登出
+}
+
+//心跳
+message tos_1009
+{}
+//心跳回复
+message toc_1009
+{
+  optional int64 server_time = 1;//服务器时间
+}
+
+//GM命令
+message tos_1010
+{
+  optional byte type = 1;//货币类型
+  optional int16 num = 2;//货币数量
+}
+message toc_1010
+{
+
+}
+
+//活动推送时间 type：2=直购礼包活动，3=消耗礼包活动
+message toc_1099
+{
+  required int32 shopId=5;
+  required byte type = 1;//活动类型
+  required string rewards = 4;//活动奖励后台配置
+  required int64 startTime = 2;//活动开始时间
+  required int64 endTime = 3;//活动结束时间
+}

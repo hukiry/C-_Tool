@@ -1,0 +1,149 @@
+package com.nutspower.pb.logic;
+option java_outer_classname = "GChapter";
+
+
+/**
+  角色章节信息
+ */
+message RoleChapterInfo
+{
+  // 章节id
+  optional int32 chapterId = 1;
+  // 获得星星数量
+  optional int32 obtainStarNum = 2;
+}
+
+message RoleCheckpointInfo
+{
+  // 章节id
+  //  optional int32 chapterId = 1;
+  // 关卡id
+  optional int32 checkpointId = 2;
+  // 通关难度等级
+  optional int32 difficultyLevel = 3;
+  // 当前难度获得积分
+  optional int64 integral = 4;
+  // 获得物品（key ID）
+  repeated int32 obtainItems = 5;
+  // 状态 0 未解锁 1已解锁 2 已通关 -> 状态 0 未通关 1 已通关
+  optional int32 status = 6;
+  // 通关所需积分
+  optional int64 customsIntegral = 7;
+}
+
+message ItemsInfo
+{
+  optional int32 itemId = 1;
+  optional int32 number = 2;
+}
+
+//////////////////////////////////////
+
+/************请求所有章节解锁数据***********/
+//GMsg_11007001
+message m_1301_tos
+{
+}
+
+//GMsg_12001000
+message m_1301_toc
+{
+  repeated RoleChapterInfo chapterInfos = 1;
+}
+
+/************请求某章节所有关卡数据***********/
+//GMsg_11007002
+message m_1302_tos
+{
+  required int32 chapterId = 1;
+}
+
+//GMsg_12001000
+message m_1302_toc
+{
+  // 关卡信息
+  repeated RoleCheckpointInfo checkpointInfo_list = 3;
+}
+
+/************请求进入某一关卡***********/
+//GMsg_11007004
+message m_1303_tos
+{
+  optional int64 guid = 1;
+  // 章节id
+  optional int32 chapterId = 2;
+  // 关卡id
+  optional int32 checkpointId = 3;
+  // 关卡等级
+  optional int32 level = 4;
+}
+
+//GMsg_12001000
+message m_1303_toc
+{
+  optional string boxes = 1;
+}
+
+/************请求关卡解密结算***********/
+//GMsg_11007005
+message m_1304_tos
+{
+  optional int64 guid = 1;
+  // 章节id
+  optional int32 chapterId = 2;
+  // 关卡idGMsg_12007004
+  optional int32 checkpointId = 3;
+  // 关卡等级
+  optional int32 level = 4;
+  // 物件积分
+  optional int32 objectsIntegral = 5;
+  // 通关时间
+  optional int32 passTime = 6;
+  //误触次数
+  optional int32 unCorrect = 7;
+  // 使用提示次数
+  optional int32 tips = 8;
+  // 是否全连击
+  optional bool comboFlag = 9[default = false];
+  //
+  optional int32 status = 10;
+}
+
+//GMsg_12001000
+message m_1304_toc
+{
+  // 返回状态
+  optional int32 status = 1;
+}
+
+/************请求解锁章节***********/
+//GMsg_11007006
+message m_1305_tos
+{
+  required int32 unlockChapter = 1;
+}
+
+//GMsg_12001000
+message m_1305_toc
+{
+}
+
+/************新手引导结算***********/
+//GMsg_11007007
+message m_1306_tos
+{
+  required int32 score = 1;
+}
+
+//GMsg_12001000
+message m_1306_toc
+{
+}
+
+
+
+
+
+
+
+

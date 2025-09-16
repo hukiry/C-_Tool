@@ -1,0 +1,28 @@
+package com.nutspower.pb.logic;
+option java_outer_classname = "GShop";
+
+/************商店购买***********/
+//GMsg_11014001
+message m_1801_tos
+{
+  required int32 item= 1;//购买item
+}
+
+message m_1801_toc
+{
+}
+
+/************打开商店***********/
+//GMsg_11014002
+message m_1802_tos
+{
+}
+
+message m_1802_toc
+{
+}
+
+
+
+
+

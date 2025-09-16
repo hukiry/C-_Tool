@@ -1,0 +1,31 @@
+
+//请求商店数据
+message tos_1301
+{
+
+}
+
+//所有商店数据
+message toc_1301
+{
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated int16 shopIds = 1;//商品id集合
+    #[TextLength(ProtoType.Json)]
+  repeated int16 payPrices = 2;//商店支付价格集合
+    #[TextLength(ProtoType.Json|ProtoType.Update)]
+  repeated byte states = 3;//商店购买状态
+}
+
+
+//购买商品
+message tos_1302
+{
+  required int16 shopId = 1;//购买的商品id
+  required bool isSdk = 2;//sdk支付
+}
+
+//购买完成
+message toc_1302
+{
+  required int16 shopId = 1;//返回购买的商品id
+}
