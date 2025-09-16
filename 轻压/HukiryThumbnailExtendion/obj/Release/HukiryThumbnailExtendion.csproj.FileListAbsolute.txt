@@ -1,0 +1,14 @@
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\HukiryThumbnailExtendion.dll
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\SharpShell.dll
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\HukiryThumbnailExtendion.dll.config
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\Apex.WinForms.dll
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\ServerManager.exe
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\ServerRegistrationManager.exe
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\ServerManager.pdb
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\SharpShell.pdb
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\SharpShell.xml
+D:\VS_work\轻压\HukiryThumbnailExtendion\obj\Release\HukiryThumbnailExtendion.csproj.CoreCompileInputs.cache
+D:\VS_work\轻压\HukiryThumbnailExtendion\obj\Release\HukiryThumbnailExtendion.csproj.CopyComplete
+D:\VS_work\轻压\HukiryThumbnailExtendion\obj\Release\HukiryThumbnailExtendion.dll
+D:\VS_work\轻压\HukiryThumbnailExtendion\obj\Release\HukiryThumbnailExtendion.pdb
+D:\VS_work\轻压\HukiryThumbnailExtendion\bin\Release\HukiryThumbnailExtendion.pdb

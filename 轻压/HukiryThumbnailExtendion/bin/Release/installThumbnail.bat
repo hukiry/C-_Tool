@@ -1,0 +1,2 @@
+ServerRegistrationManager.exe install HukiryThumbnailExtendion.dll -codebase
+pause

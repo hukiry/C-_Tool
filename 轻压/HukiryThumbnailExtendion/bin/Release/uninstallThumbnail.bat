@@ -1,0 +1,2 @@
+ServerRegistrationManager.exe uninstall HukiryThumbnailExtendion.dll
+pause

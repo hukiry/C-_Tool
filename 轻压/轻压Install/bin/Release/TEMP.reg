@@ -1,0 +1,56 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\Hukiry]
+@="用轻压打开"
+"Icon"="C:\Program Files\Hukiry\qingya.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\Hukiry\Command]
+@="C:\Program Files\Hukiry\qingya.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\.hxp]
+@="File.hxp"
+"Content Type"="File/hxp"
+
+[HKEY_CLASSES_ROOT\.hxp\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\.sip]
+@="File.hxp"
+"Content Type"="File/sip"
+
+[HKEY_CLASSES_ROOT\.sip\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\File.hxp]
+@="轻压文件"
+
+[HKEY_CLASSES_ROOT\File.hxp\DefaultIcon]
+@="C:\Program Files\Hukiry\qingya.exe"
+
+[HKEY_CLASSES_ROOT\File.hxp\shell]
+
+[HKEY_CLASSES_ROOT\File.hxp\shell\open]
+
+[HKEY_CLASSES_ROOT\File.hxp\shell\open\command]
+@="\"C:\Program Files\Hukiry\qingya.exe\" \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\Hukiry]
+@="用轻压压缩"
+"Icon"="C:\Program Files\Hukiry\qingya.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\Hukiry\Command]
+@="\"C:\Program Files\Hukiry\qingya.exe\" \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Hukiry]
+"InstallLocation" = "C:\Program Files\Hukiry"
+"HelpLink" = "https://www.hukiry.com"
+"DisplayName" = "轻压"
+"DisplayVersion" = "1.0.0"
+"DisplayIcon" = "C:\Program Files\Hukiry\qingya.exe"
+"UninstallString" = "\"C:\Program Files\Hukiry\qingya.exe\""
+"Publisher" = "hukiry"
+"URLInfoAbout" = "https://www.hukiry.com"
+"NoModify" = dword:00000001
+"NoRepair" = dword:00000001
+"InstallDate" = "20230728"
+"EstimatedSize" = dword:00010da1

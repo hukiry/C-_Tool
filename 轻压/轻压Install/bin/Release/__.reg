@@ -1,0 +1,37 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\Hukiry]
+@="用轻压打开"
+"Icon"="C:\Program Files\Hukiry\轻压.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\Hukiry\Command]
+@="C:\Program Files\Hukiry\轻压.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\.hxp]
+@="File.hxp"
+"Content Type"="File/hxp"
+
+[HKEY_CLASSES_ROOT\.hxp\shell]
+
+[HKEY_CLASSES_ROOT\.hxp\shell\open]
+
+[HKEY_CLASSES_ROOT\.hxp\shell\open\command]
+@="C:\Program Files\Hukiry\轻压.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\.sip]
+@="File.sip"
+"Content Type"="File/sip"
+
+[HKEY_CLASSES_ROOT\.sip\shell]
+
+[HKEY_CLASSES_ROOT\.sip\shell\open]
+
+[HKEY_CLASSES_ROOT\.sip\shell\open\command]
+@="C:\Program Files\Hukiry\轻压.exe \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\Hukiry]
+@="用轻压压缩"
+"Icon"="C:\Program Files\Hukiry\轻压.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\Hukiry\Command]
+@="C:\Program Files\Hukiry\轻压.exe \"%1\""

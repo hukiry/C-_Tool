@@ -1,0 +1,12 @@
+D:\VS_work\轻压\HukiryPropertySheet\bin\Release\HukiryPropertySheet.dll
+D:\VS_work\轻压\HukiryPropertySheet\bin\Release\HukiryPropertySheet.pdb
+D:\VS_work\轻压\HukiryPropertySheet\bin\Release\SharpShell.dll
+D:\VS_work\轻压\HukiryPropertySheet\bin\Release\SharpShell.pdb
+D:\VS_work\轻压\HukiryPropertySheet\bin\Release\SharpShell.xml
+D:\VS_work\轻压\HukiryPropertySheet\obj\Release\HukiryPropertySheet.FileInfoPropertySheet.resources
+D:\VS_work\轻压\HukiryPropertySheet\obj\Release\HukiryPropertySheet.Properties.Resources.resources
+D:\VS_work\轻压\HukiryPropertySheet\obj\Release\HukiryPropertySheet.csproj.GenerateResource.cache
+D:\VS_work\轻压\HukiryPropertySheet\obj\Release\HukiryPropertySheet.csproj.CoreCompileInputs.cache
+D:\VS_work\轻压\HukiryPropertySheet\obj\Release\HukiryPropertySheet.csproj.CopyComplete
+D:\VS_work\轻压\HukiryPropertySheet\obj\Release\HukiryPropertySheet.dll
+D:\VS_work\轻压\HukiryPropertySheet\obj\Release\HukiryPropertySheet.pdb

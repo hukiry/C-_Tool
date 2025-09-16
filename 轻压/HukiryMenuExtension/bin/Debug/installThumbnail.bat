@@ -1,0 +1,2 @@
+ServerRegistrationManager.exe install HukiryMenuExtension.dll -codebase
+pause

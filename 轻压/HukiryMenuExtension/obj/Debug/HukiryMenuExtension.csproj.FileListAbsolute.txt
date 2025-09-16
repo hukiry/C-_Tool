@@ -1,0 +1,12 @@
+D:\VS_work\轻压\HukiryMenuExtension\bin\Debug\HukiryMenuExtension.dll
+D:\VS_work\轻压\HukiryMenuExtension\bin\Debug\HukiryMenuExtension.pdb
+D:\VS_work\轻压\HukiryMenuExtension\bin\Debug\Apex.WinForms.dll
+D:\VS_work\轻压\HukiryMenuExtension\bin\Debug\SharpShell.dll
+D:\VS_work\轻压\HukiryMenuExtension\bin\Debug\SharpShell.pdb
+D:\VS_work\轻压\HukiryMenuExtension\bin\Debug\SharpShell.xml
+D:\VS_work\轻压\HukiryMenuExtension\obj\Debug\HukiryMenuExtension.Properties.Resources.resources
+D:\VS_work\轻压\HukiryMenuExtension\obj\Debug\HukiryMenuExtension.csproj.GenerateResource.cache
+D:\VS_work\轻压\HukiryMenuExtension\obj\Debug\HukiryMenuExtension.csproj.CoreCompileInputs.cache
+D:\VS_work\轻压\HukiryMenuExtension\obj\Debug\HukiryMenuExtension.csproj.CopyComplete
+D:\VS_work\轻压\HukiryMenuExtension\obj\Debug\HukiryMenuExtension.dll
+D:\VS_work\轻压\HukiryMenuExtension\obj\Debug\HukiryMenuExtension.pdb

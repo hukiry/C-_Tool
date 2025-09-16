@@ -1,0 +1,10 @@
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\obj\Debug\轻压Hxp.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\obj\Debug\轻压Hxp.Form1.resources
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\obj\Debug\轻压Hxp.Properties.Resources.resources
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\obj\Debug\轻压Hxp.csproj.GenerateResource.cache
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\obj\Debug\轻压Hxp.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\bin\Debug\轻压Hxp.exe.config
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\bin\Debug\轻压Hxp.exe
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\bin\Debug\轻压Hxp.pdb
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\obj\Debug\轻压Hxp.exe
+C:\Users\hp\Desktop\Project\轻压\轻压Hxp\obj\Debug\轻压Hxp.pdb

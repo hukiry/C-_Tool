@@ -1,0 +1,3 @@
+ServerRegistrationManager.exe install HukiryThumbnailExtendion.dll -codebase
+ServerRegistrationManager.exe install HukiryMenuExtension.dll -codebase
+ServerRegistrationManager.exe install HukiryPropertySheet.dll -codebase

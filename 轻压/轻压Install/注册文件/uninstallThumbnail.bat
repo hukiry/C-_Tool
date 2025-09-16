@@ -1,0 +1,3 @@
+ServerRegistrationManager.exe uninstall HukiryThumbnailExtendion.dll
+ServerRegistrationManager.exe uninstall HukiryMenuExtension.dll
+ServerRegistrationManager.exe uninstall HukiryPropertySheet.dll
