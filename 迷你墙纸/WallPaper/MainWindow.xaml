@@ -1,0 +1,50 @@
+﻿<Window x:Class="迷你墙纸.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:迷你墙纸" xmlns:dmcontrols="clr-namespace:DMSkin.WPF.Controls;assembly=DMSkin.WPF"
+        mc:Ignorable="d"
+        Width="500" Height="420" MinWidth="500" MinHeight="420" AllowsTransparency="True" BorderThickness="0" Foreground="#FF333333" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="{x:Null}" Loaded="DMSkinSimpleWindow_Loaded" ShowInTaskbar="False">
+    <Grid Background="#77FFFFFF">
+        <Grid Background="#01FFFFFF" MouseDown="Grid_MouseDown">
+            <Border BorderBrush="#EEEEEE" BorderThickness="1" >
+                <Image Width="55" Height="48" HorizontalAlignment="Left" Margin="5,0,0,5" VerticalAlignment="Bottom" Name="img"/>
+            </Border>
+            <TextBlock Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Text="梦幻墙纸(hukiry)" />
+            <StackPanel Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Margin="5" Text="视频地址" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <dmcontrols:DMTextBox Name="TbUrl" Height="30" Width="260" MaxWidth="260" Margin="5" BorderBrush="#99333333" BorderThickness="1" Hint="例如:#FF333333" Icon="{StaticResource Icon_Safe}"  ShowIcon="True" Text="请选择*.MP4" />
+                    <dmcontrols:DMButton Name="BtnOpen" Grid.Column="1" Width="60" Height="30" Margin="5" VerticalAlignment="Center" Content="选择" CornerRadius="5" Click="BtnOpen_Click" />
+                </Grid>
+
+                <dmcontrols:DMRadioButton Name="PlayerMINI" Margin="5" Content="迷你解码器" GroupName="PlayerType" IsChecked="True" IconColor="{Binding Path=Foreground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}" />
+                <dmcontrols:DMRadioButton Name="PlayerXL" Margin="5" Content="AxWindowsMedia解码器" GroupName="PlayerType" IconColor="{Binding Path=Foreground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}" Grid.ColumnSpan="2" />
+
+                <dmcontrols:DMCheckBox Name="PlayerRun" Margin="5" Content="解码器独立运行(勾选后退出此程序保持播放)" IsChecked="False" IconColor="{Binding Path=Foreground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <dmcontrols:DMCheckBox Name="BtnTask"  Margin="5" IsChecked="True"  Content="校正播放器"  Click="BtnTask_Click" IconColor="{Binding Path=Foreground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}" Grid.ColumnSpan="2"/>
+                    <dmcontrols:DMCheckBox Name="BtnStart"  Margin="134,0,-120,0" IsChecked="False"  Content="开机启动"  Click="BtnTask_Click" IconColor="{Binding Path=Foreground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}" Grid.ColumnSpan="2" Checked="BtnStart_Checked" Grid.Column="1"/>
+                </Grid>
+
+                <TextBlock Margin="5" Text="音量" />
+                <Slider Name="SliderVolume" Grid.Column="1" Margin="5" LargeChange="1" Maximum="100" Value="0" Style="{StaticResource DMOpacitySlider}"  ValueChanged="SliderVolume_ValueChanged" BorderThickness="0" />
+
+                <dmcontrols:DMButton Name="BtnPlay" Height="30" Margin="5" Background="#FF1E9FFF" BorderThickness="0" Content="启动播放器" CornerRadius="3" Foreground="#FFFFFFFF" Click="BtnPlay_Click" />
+                <dmcontrols:DMButton Name="BtnClose" Height="30" Margin="5" Background="#FFFF8E1E" BorderThickness="0" Content="关闭所有播放器" CornerRadius="5" Foreground="#FFFFFFFF" Click="BtnClose_Click" />
+            </StackPanel>
+        </Grid>
+        <WrapPanel Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal">
+            <dmcontrols:DMSystemMinButton Margin="0,0.5,0.5,0" DMSystemButtonForeground="Black" DMSystemButtonHoverForeground="#FFFFFF" DMSystemButtonSize="30" ClickMode="Press" Click="DMSystemMinButton_Click" />
+        </WrapPanel>
+        <ResizeGrip HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>

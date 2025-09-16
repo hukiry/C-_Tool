@@ -1,0 +1,14 @@
+D:\VS_work\迷你墙纸\Build\XunleiPlayer.exe.config
+D:\VS_work\迷你墙纸\Build\XunleiPlayer.exe
+D:\VS_work\迷你墙纸\Build\XunleiPlayer.pdb
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\XunleiPlayer.csproj.AssemblyReference.cache
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\Interop.WMPLib.dll
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\AxInterop.WMPLib.dll
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\XunleiPlayer.csproj.ResolveComReference.cache
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\XunleiPlayer.Player.resources
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\XunleiPlayer.Properties.Resources.resources
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\XunleiPlayer.csproj.GenerateResource.cache
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\XunleiPlayer.csproj.CoreCompileInputs.cache
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\XunleiPlayer.csproj.CopyComplete
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\XunleiPlayer.exe
+D:\VS_work\迷你墙纸\Xunlei.Server\obj\Debug\XunleiPlayer.pdb

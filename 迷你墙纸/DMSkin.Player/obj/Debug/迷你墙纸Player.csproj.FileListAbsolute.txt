@@ -1,0 +1,16 @@
+D:\Build\迷你墙纸.exe.config
+D:\Build\迷你墙纸.exe
+D:\Build\迷你墙纸.pdb
+D:\VS_work\迷你墙纸\obj\Debug\Player.g.cs
+D:\VS_work\迷你墙纸\obj\Debug\App.g.cs
+D:\VS_work\迷你墙纸\obj\Debug\迷你墙纸_MarkupCompile.cache
+D:\VS_work\迷你墙纸\obj\Debug\迷你墙纸_MarkupCompile.lref
+D:\VS_work\迷你墙纸\obj\Debug\App.baml
+D:\VS_work\迷你墙纸\obj\Debug\Player.baml
+D:\VS_work\迷你墙纸\obj\Debug\迷你墙纸.g.resources
+D:\VS_work\迷你墙纸\obj\Debug\迷你墙纸.Properties.Resources.resources
+D:\VS_work\迷你墙纸\obj\Debug\迷你墙纸Player.csproj.GenerateResource.cache
+D:\VS_work\迷你墙纸\obj\Debug\迷你墙纸Player.csproj.CoreCompileInputs.cache
+D:\VS_work\迷你墙纸\obj\Debug\迷你墙纸Player.csproj.CopyComplete
+D:\VS_work\迷你墙纸\obj\Debug\迷你墙纸.exe
+D:\VS_work\迷你墙纸\obj\Debug\迷你墙纸.pdb

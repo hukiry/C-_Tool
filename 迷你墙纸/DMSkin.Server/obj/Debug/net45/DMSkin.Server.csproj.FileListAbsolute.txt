@@ -1,0 +1,7 @@
+D:\VS_work\迷你墙纸\Build\net45\DMSkin.Server.dll
+D:\VS_work\迷你墙纸\Build\net45\DMSkin.Server.pdb
+D:\VS_work\迷你墙纸\DMSkin.Server\obj\Debug\net45\DMSkin.Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS_work\迷你墙纸\DMSkin.Server\obj\Debug\net45\DMSkin.Server.csproj.CoreCompileInputs.cache
+D:\VS_work\迷你墙纸\DMSkin.Server\obj\Debug\net45\DMSkin.Server.csproj.CopyComplete
+D:\VS_work\迷你墙纸\DMSkin.Server\obj\Debug\net45\DMSkin.Server.dll
+D:\VS_work\迷你墙纸\DMSkin.Server\obj\Debug\net45\DMSkin.Server.pdb
