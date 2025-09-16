@@ -1,0 +1,16 @@
+D:\VS_work\HttpServer\HttpClient\bin\Debug\net5.0\HttpClient.exe
+D:\VS_work\HttpServer\HttpClient\bin\Debug\net5.0\HttpClient.deps.json
+D:\VS_work\HttpServer\HttpClient\bin\Debug\net5.0\HttpClient.runtimeconfig.json
+D:\VS_work\HttpServer\HttpClient\bin\Debug\net5.0\HttpClient.runtimeconfig.dev.json
+D:\VS_work\HttpServer\HttpClient\bin\Debug\net5.0\HttpClient.dll
+D:\VS_work\HttpServer\HttpClient\bin\Debug\net5.0\ref\HttpClient.dll
+D:\VS_work\HttpServer\HttpClient\bin\Debug\net5.0\HttpClient.pdb
+D:\VS_work\HttpServer\HttpClient\obj\Debug\net5.0\HttpClient.csproj.AssemblyReference.cache
+D:\VS_work\HttpServer\HttpClient\obj\Debug\net5.0\HttpClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS_work\HttpServer\HttpClient\obj\Debug\net5.0\HttpClient.AssemblyInfoInputs.cache
+D:\VS_work\HttpServer\HttpClient\obj\Debug\net5.0\HttpClient.AssemblyInfo.cs
+D:\VS_work\HttpServer\HttpClient\obj\Debug\net5.0\HttpClient.csproj.CoreCompileInputs.cache
+D:\VS_work\HttpServer\HttpClient\obj\Debug\net5.0\HttpClient.dll
+D:\VS_work\HttpServer\HttpClient\obj\Debug\net5.0\ref\HttpClient.dll
+D:\VS_work\HttpServer\HttpClient\obj\Debug\net5.0\HttpClient.pdb
+D:\VS_work\HttpServer\HttpClient\obj\Debug\net5.0\HttpClient.genruntimeconfig.cache
